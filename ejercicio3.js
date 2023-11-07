@@ -8,6 +8,6 @@ const arrCities = [
     {city: 'Jaén', country: 'Spain', capital: false}
 ]
 
-const noCapitales=arrCities.filter(item=>item.capital===false||item.country!=="Spain");
+const noCapital=arrCities.filter(item=>item.capital===false||item.country!=="Spain");
 
-console.log(noCapitales);
+console.log(noCapital);

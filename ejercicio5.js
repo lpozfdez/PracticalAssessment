@@ -10,7 +10,7 @@ const arrCities = [
     {city: 'Jaén', country: 'Spain', capital: false}
 ]
 
-const noCapitales=arrCities
+const noCapital=arrCities
                     .filter(item=>item.capital===false)
                     .map(function(item){
                         let isSpain=true;
@@ -23,4 +23,4 @@ const noCapitales=arrCities
                         })
                     });
 
-console.log(noCapitales);
+console.log(noCapital);

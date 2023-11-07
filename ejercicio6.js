@@ -4,11 +4,11 @@ La función debe tener dos parámetros:
 ⦁	Según parámetro es un int que indique el número de decimales al que redondear
 ⦁	Evitar usar el método toFixed()
  */
-function redondear(num, numDecimales){
-    let numEntero=Math.trunc(Math.pow(10,numDecimales)*num);
-    return numEntero/Math.pow(10,numDecimales);
+function round(num, numDouble){
+    let numInt=Math.trunc(Math.pow(10,numDouble)*num);
+    return numInt/Math.pow(10,numDouble);
 }
 
-let resultado=redondear(1.123456789, 6);
+let result=round(1.123456789, 6);
 
-console.log(resultado);
+console.log(result);
