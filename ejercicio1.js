@@ -7,5 +7,5 @@ const arrNames = [
     {id: 5, name: 'Lala'}
   ]
 
-console.log(arrNames[2]);
+console.log(arrNames.filter(item=>item.id===3));
   

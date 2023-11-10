@@ -1,4 +1,6 @@
-/*Ejercicio 5: Dado un array de ciudades, sacar en un nuevo array las ciudades no capitales con unos nuevos parámetros que sean city y isSpain. El valor de isSpain será un booleano indicando si es una ciudad de España.
+/*Ejercicio 5: Dado un array de ciudades, sacar en un nuevo array las ciudades 
+no capitales con unos nuevos parámetros que sean city y isSpain. 
+El valor de isSpain será un booleano indicando si es una ciudad de España.
 */
 
 const arrCities = [
@@ -11,7 +13,7 @@ const arrCities = [
 ]
 
 const noCapital=arrCities
-                    .filter(item=>item.capital===false)
+                    .filter(item=>!item.capital)/*
                     .map(function(item){
                         let isSpain=true;
                         if(item.country!=='Spain'){
@@ -21,6 +23,14 @@ const noCapital=arrCities
                             city: item.city,
                             isSpain:isSpain
                         })
-                    });
+                    });*/
+
+                    .map((item)=>{
+                        return({  
+                            city: item.city,
+                            isSpain:item.country==='Spain' //? true : false
+                        })
+                    })
+                        
 
 console.log(noCapital);

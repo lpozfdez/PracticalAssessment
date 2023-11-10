@@ -5,8 +5,7 @@ La función debe tener dos parámetros:
 ⦁	Evitar usar el método toFixed()
  */
 function round(num, numDouble){
-    let numInt=Math.trunc(Math.pow(10,numDouble)*num);
-    return numInt/Math.pow(10,numDouble);
+    return Math.trunc(Math.pow(10,numDouble)*num)/Math.pow(10,numDouble);
 }
 
 let result=round(1.123456789, 6);
